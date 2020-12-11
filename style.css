@@ -1,0 +1,273 @@
+ h1 {text-align: center;
+     color:turquoise;
+     text-shadow:4px 4px 9px turquoise ;
+ }
+
+ .title {
+     color:rgb(66, 248, 29);
+ }
+
+ #italic {
+     color: purple;
+ }
+
+ nav{
+     background-color: aquamarine;
+text-align: center;
+ }
+ a{
+     text-decoration-line: none;
+ }
+
+
+
+ nav ul{
+     list-style: none ;
+ }
+
+ nav li{
+     display: inline-block;
+     padding: 30px;
+ }
+
+ .container { 
+     border: 20px dotted turquoise;
+      margin:50px 5px 25px 0px;
+      padding: 30px 50px;
+ }
+
+ .box {
+     
+     height: 200px;
+     width: 200px;
+     background: turquoise; 
+     margin: 10px ;
+     box-shadow:8px 8px 30px 40px rgb(81, 87, 87) inset ;
+     text-align: center;
+     ;
+    
+    
+ } 
+
+ .circle-img{
+     border-radius: 50%;}
+
+     img{ box-shadow:8px 8px 10px 8px rgb(81, 87, 87);
+}
+
+@keyframes fadeMe {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+#box1{
+    animation-name:fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+@keyframes rotation{
+    0%{transform: rotate( 90deg );}
+    50%{transform: rotate( 180deg );}
+    100%{transform: rotate( 360deg);}
+}
+#box2{
+    animation-name:rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: black;
+}
+@keyframes getBigger{
+    0%{transform: scale(1);}
+    50%{transform: scale(2) ;}
+    100%{transform: scale(.5);}
+}
+ #box3 {
+     animation: getBigger infinite 8s ease-in;
+     border-radius: 50%;
+     background: greenyellow;
+ }
+
+ @keyframes changeColors{
+    0%{background-color: brown;}
+    25%{background-color: yellow;}
+    50%{background-color:red}
+    75%{background-color:green}
+    100%{background-color:brown }
+ }
+
+
+
+
+ #box4{animation: changeColors 3s 2s forwards;
+ }
+
+
+
+ @keyframes moveBox{
+    0%{left: 0px; top: 0px;}
+    25%{left: 225px; top: 0px;}
+    50%{left: 0px; top: 200px;}
+    75%{left:220px; top: 0px;}
+    100%{left: 0px; top: 0px;}
+ }
+
+#box5 {
+    animation: moveBox 5s 3s;
+    position:relative;
+    background: yellow;
+}
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+html{
+    background-image: linear-gradient(to right, rgb(120, 192, 221),
+    rgb(233, 240, 132),
+    rgb(137, 221, 193))
+}
+
+
+ 
+
+.flex {
+    margin: 30px;
+    border:3px solid turquoise;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content :center;
+
+    padding: 10px ;
+}
+
+form input, textarea, button{
+    display: block;
+    margin: 30px;
+}
+
+.nav-wrapper{
+    background-color: turquoise;
+}
+
+ .row{
+    margin: 30px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+}
+.input-field{
+    margin: 20px;
+}  
+
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box { 
+    
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+   
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    
+}
+.b {
+    grid-column: col 4/ span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col/ span 6 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+   background-color: aqua;
+   border-radius: 90%;
+}
+.d {
+    grid-column: col / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3/ span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2/ span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+
+.pp {
+    text-align: center;
+}
+
+.hello {
+   margin-left: 750px;
+}
+
+.contatc {
+    text-align: center;
+}
+
+#profile{
+    
+    
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content > * {
+    display: block;
+    max-width: 400px;
+}
+
+.margin-center {
+    margin: 1rem auto;
+}
+
+.hi {
+    margin: 0 auto;
+    max-width: 1100px;
+    
+}
+
